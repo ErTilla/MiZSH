@@ -1,0 +1,2 @@
+# MiZSH
+powerlevel10k
