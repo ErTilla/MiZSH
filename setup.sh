@@ -22,8 +22,8 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
             cp ./.p10k.zsh ~/.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
-            git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-            echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+           git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
+            echo 'source $HOME/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
             source ~/.zshrc
             cp ./.p10k.zsh ~/.p10k.zsh
 
