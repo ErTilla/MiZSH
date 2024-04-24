@@ -96,6 +96,7 @@ else
             echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
             source ~/.zshrc
             cp ./.p10k.zsh ~/.p10k.zsh
+            
 
         fi
 
@@ -103,4 +104,7 @@ else
 fi
 ./batcat.sh
 ./lsd.sh
+
 chsh -s /usr/bin/zsh
+
+exit 0
