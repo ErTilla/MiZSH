@@ -7,7 +7,9 @@ if which batcat &> /dev/null ; then
 else
     echo "batcat no está instalado en este sistema."
     git clone https://github.com/sharkdp/bat.git
-    sudo apt-get install -y build-essential cmake zlib1g-dev
+    sudo apt update
+    sudo apt install build-essential cmake zlib1g-dev
+
     cd bat
     cargo build --release
     sudo cp target/release/bat /usr/local/bin/
