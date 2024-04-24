@@ -29,6 +29,18 @@ else
         else
             echo "batcat no está instalado en este sistema (3 prueba)."
             sudo rm -r ./bat
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+            rustup install stable
+            rustc --version
+            cargo --version
+            # Verificar si Rust está en el PATH
+            if command -v rustc &> /dev/null; then
+                echo "Rust ya está agregado al PATH."
+                echo "¡Puedes usar Rust y Cargo desde cualquier ubicación!"
+            else
+                echo "Rust no está agregado al PATH."
+                echo "Por favor, agrega Rust al PATH para usar Rust y Cargo."
+            fi
 
         fi
     fi
