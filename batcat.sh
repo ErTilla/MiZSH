@@ -1,4 +1,13 @@
 #!/bin/bash
+
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+    if [ "$ID" = "kali" ]; then
+        echo "El sistema operativo es Kali Linux batcat no se puede instalar aqui."
+        cp zshkali ~/.zshrc
+    fi
+else
+    
 # Comprobar si batcat está instalado
 if which batcat &> /dev/null ; then
     echo "batcat está instalado en este sistema."
