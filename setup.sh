@@ -13,7 +13,7 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
     if [ -f "$zsh" ]; then
         echo "Oh My Zsh está instalado en este sistema."
         cp ./.zshrc ~/.zshrc
-        cp .oh-my-zsh ~/
+        cp -r .oh-my-zsh ~/
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
 
