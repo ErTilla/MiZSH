@@ -3,7 +3,7 @@
 if [ -f /etc/os-release ]; then
     source /etc/os-release
     if [ "$ID" = "kali" ]; then
-        echo "El sistema operativo es Kali Linux batcat no se puede instalar aqui."
+        echo "El sistema operativo es Kali Linux batcat ni lsd no se puede instalar aqui."
         cp zshkali ~/.zshrc
     fi
 else
