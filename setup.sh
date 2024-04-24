@@ -1,5 +1,6 @@
 #!/bin/bash
-
+./batcat.sh
+./lsd.sh
 # Verificar si zsh está instalado
 zsh_path=$(which zsh)
 
@@ -102,8 +103,7 @@ else
 
     fi
 fi
-./batcat.sh
-./lsd.sh
+
 
 chsh -s /usr/bin/zsh
 
