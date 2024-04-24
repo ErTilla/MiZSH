@@ -20,7 +20,7 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
         # Verificar si el archivo de configuración de Powerlevel10k existe
         if [ -f "$p10k" ]; then
             echo "Powerlevel10k está instalado en este sistema."
-            cp ./.p10k.zsh ~/.p10k.zsh
+            cp -r ./.p10k.zsh ~/.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
            git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
@@ -34,7 +34,7 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
         echo "Oh My Zsh no está instalado en este sistema."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         cp ./.zshrc ~/.zshrc
-        cp .oh-my-zsh ~/
+        cp -r .oh-my-zsh ~/
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
         
@@ -64,7 +64,7 @@ else
     if [ -f "$zsh" ]; then
         echo "Oh My Zsh está instalado en este sistema."
         cp ./.zshrc ~/.zshrc
-
+        cp -r .oh-my-zsh ~/
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
 
@@ -85,7 +85,7 @@ else
         echo "Oh My Zsh no está instalado en este sistema."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         cp ./.zshrc ~/.zshrc
-        cp .oh-my-zsh ~/
+        cp -r .oh-my-zsh ~/
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
 
