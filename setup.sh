@@ -101,5 +101,5 @@ else
 
     fi
 fi
-./a.sh
+./batcat.sh
 ./lsd.sh
