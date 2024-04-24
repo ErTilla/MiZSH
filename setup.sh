@@ -102,3 +102,4 @@ else
     fi
 fi
 ./a.sh
+./lsd.sh
