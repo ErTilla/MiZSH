@@ -13,9 +13,9 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
     if [ -f "$zsh" ]; then
         echo "Oh My Zsh está instalado en este sistema."
         cp ./.zshrc ~/.zshrc
-        cp -r .oh-my-zsh ~/
-        cp -r .zshrc.pre-oh-my-zsh ~/
-        cp -r .zsh_history ~/
+        cp -r .oh-my-zsh ~
+        cp -r .zshrc.pre-oh-my-zsh ~
+        cp -r .zsh_history ~
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
 
@@ -36,9 +36,9 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
         echo "Oh My Zsh no está instalado en este sistema."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         cp ./.zshrc ~/.zshrc
-        cp -r .oh-my-zsh ~/
-        cp -r .zshrc.pre-oh-my-zsh ~/
-        cp -r .zsh_history ~/
+        cp -r .oh-my-zsh ~
+        cp -r .zshrc.pre-oh-my-zsh ~
+        cp -r .zsh_history ~
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
         
@@ -91,9 +91,9 @@ else
         echo "Oh My Zsh no está instalado en este sistema."
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         cp ./.zshrc ~/.zshrc
-        cp -r .oh-my-zsh ~/
-        cp -r .zshrc.pre-oh-my-zsh ~/
-        cp -r .zsh_history ~/
+        cp -r .oh-my-zsh ~
+        cp -r .zshrc.pre-oh-my-zsh ~
+        cp -r .zsh_history ~
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
 
