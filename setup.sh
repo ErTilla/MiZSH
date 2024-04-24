@@ -103,3 +103,4 @@ else
 fi
 ./batcat.sh
 ./lsd.sh
+chsh -s /usr/bin/zsh
