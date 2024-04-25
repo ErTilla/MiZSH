@@ -54,7 +54,7 @@ else
     # código para instalar zsh
     sudo apt install zsh
     #Ruta al archivo de configuración de Oh My Zsh
-    zsh="$HOME/.zshrc"
+    zsh="$HOME/.oh-my-zsh"
 
     # Verificar si el archivo de configuración de Oh My Zsh existe
     if [ -f "$zsh" ]; then
