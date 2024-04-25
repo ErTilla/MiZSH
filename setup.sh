@@ -17,13 +17,13 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
         # Verificar si el archivo de configuración de Powerlevel10k existe
         if [ -f "$p10k" ]; then
             echo "Powerlevel10k está instalado en este sistema."
-            cp -r ./.p10k.zsh ~/.p10k.zsh
+            sudo cp -r ./.p10k.zsh ../.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
            git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
             echo 'source $HOME/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
             source ~/.zshrc
-            cp ./.p10k.zsh ~/.p10k.zsh
+            sudo cp -r ./.p10k.zsh ../.p10k.zsh
 
         fi
 
@@ -38,13 +38,13 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
         # Verificar si el archivo de configuración de Powerlevel10k existe
         if [ -f "$p10k" ]; then
             echo "Powerlevel10k está instalado en este sistema."
-            cp ./.p10k.zsh ~/.p10k.zsh
+            sudo cp -r ./.p10k.zsh ../.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
             git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
             echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
             source ~/.zshrc
-            cp ./.p10k.zsh ~/.p10k.zsh
+            sudo cp -r ./.p10k.zsh ../.p10k.zsh
 
         fi
 
@@ -67,7 +67,7 @@ else
         # Verificar si el archivo de configuración de Powerlevel10k existe
         if [ -f "$p10k" ]; then
             echo "Powerlevel10k está instalado en este sistema."
-            cp ./.p10k.zsh ~/.p10k.zsh
+            sudo  cp -r ./.p10k.zsh ../.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
             git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
