@@ -29,7 +29,8 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
 
     else
         echo "Oh My Zsh no está instalado en este sistema."
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh && sh ~/.oh-my-zsh/tools/install.sh
+
         cp ./.zshrc ~/.zshrc
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
@@ -78,7 +79,7 @@ else
 
     else
         echo "Oh My Zsh no está instalado en este sistema."
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh && sh ~/.oh-my-zsh/tools/install.sh
         cp ./.zshrc ~/.zshrc
         # Ruta al archivo de configuración de Powerlevel10k
         p10k="$HOME/.p10k.zsh"
