@@ -5,7 +5,7 @@ zsh_path=$(which zsh)
 if [ "$zsh_path" == "/usr/bin/zsh" ]; then
     echo "zsh ya está instalado"
     #Ruta al archivo de configuración de Oh My Zsh
-    zsh="$HOME/.zshrc"
+    zsh="$HOME/.oh-my-zsh"
 
     # Verificar si el archivo de configuración de Oh My Zsh existe
     if [ -f "$zsh" ]; then
