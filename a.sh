@@ -18,5 +18,5 @@ if [ -f "$zsh" ]; then
 echo "Oh My Zsh está instalado en este sistema."
 else
 echo "Oh My Zsh no está instalado en este sistema."
-sh ~/tmp/.oh-my-zsh/tools/install.sh
+sh ./oh-my-zsh/tools/install.sh
 fi
