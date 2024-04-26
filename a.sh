@@ -27,11 +27,10 @@ fi
         # Verificar si el archivo de configuración de Powerlevel10k existe
         if [ -f "$p10k" ]; then
             echo "Powerlevel10k está instalado en este sistema."
-            sudo cp -r ./.p10k.zsh ../.p10k.zsh
+            sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
-            git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-            echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+            git clone https://github.com/romkatv/powerlevel10k.git
             source ~/.zshrc
             sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 
