@@ -1,25 +1,22 @@
 #!/bin/bash
-# Verificar si zsh está instalado
+
+mv tmp ~/
+zsh_path=$(which zsh)
 
 if [ "$zsh_path" == "/usr/bin/zsh" ]; then
-#Ya esta instalado zsh
-echo "Ya tiene instalado el ZSH"
+    echo "zsh ya está instalado"
 else
-echo "No tiene instalado el ZSH"
-sudo apt install zsh -y
-
+echo "zsh no está instalado"
+# código para instalar zsh
+sudo apt install zsh
 fi
-cp ./.zshrc ~/.zshrc
-  zsh="$HOME/.oh-my-zsh"
-# Verificar si el archivo de configuración de Oh My Zsh existe
+#Ruta al archivo de configuración de Oh My Zsh
+zsh="$HOME/.oh-my-zsh"
+ cp ~/tmp/.zshrc ~/.zshrc
+ # Verificar si el archivo de configuración de Oh My Zsh existe
 if [ -f "$zsh" ]; then
-echo "ohmyzsh ya esta instalado"
+echo "Oh My Zsh está instalado en este sistema."
 else
-echo "ohmyzsh no esta instalado"
-git clone https://github.com/ohmyzsh/ohmyzsh.git && sh ~/.oh-my-zsh/tools/install.sh
+echo "Oh My Zsh no está instalado en este sistema."
+sh ~/tmp/.oh-my-zsh/tools/install.sh
 fi
-# Ruta al archivo de configuración de Powerlevel10k
-#p10k="$HOME/.p10k.zsh"        
-# Verificar si el archivo de configuración de Powerlevel10k existe
-#if [ -f "$p10k" ]; then
-#echo "Powerlevel10k está instalado en este sistema."
