@@ -30,7 +30,8 @@ fi
             sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
         else
             echo "Powerlevel10k no está instalado en este sistema."
-            git clone https://github.com/romkatv/powerlevel10k.git
+            git clone https://github.com/romkatv/powerlevel10k.git 
+            echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
             source ~/.zshrc
             sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 
