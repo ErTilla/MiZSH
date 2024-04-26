@@ -18,5 +18,6 @@ if [ -f "$zsh" ]; then
 echo "Oh My Zsh está instalado en este sistema."
 else
 echo "Oh My Zsh no está instalado en este sistema."
-sh ./oh-my-zsh/tools/install.sh
+ git clone https://github.com/ohmyzsh/ohmyzsh.git
+ sh ./ohmyzsh/tools/install.sh
 fi
