@@ -36,3 +36,5 @@ fi
             sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 
         fi
+        ./batcat.sh
+        ./lsd.sh
