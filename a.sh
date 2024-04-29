@@ -12,14 +12,17 @@ sudo apt install zsh
 fi
 #Ruta al archivo de configuración de Oh My Zsh
 zsh=$(cat ~/.zshrc | grep ZSH_THEME)
- cp ~/tmp/.zshrc ~/.zshrc
+ 
  # Verificar si el archivo de configuración de Oh My Zsh existe
 if [ -f "$zsh" ]; then
 echo "Oh My Zsh está instalado en este sistema."
+cp ~/tmp/.zshrc ~/.zshrc
 else
 echo "Oh My Zsh no está instalado en este sistema."
- git clone https://github.com/ohmyzsh/ohmyzsh.git
- sh ./ohmyzsh/tools/install.sh
+cp ~/tmp/.zshrc ~/.zshrc
+git clone https://github.com/ohmyzsh/ohmyzsh.git
+sh ./ohmyzsh/tools/install.sh
+
 fi
 # Ruta al archivo de configuración de Powerlevel10k
 p10k="$HOME/.p10k.zsh"
