@@ -8,7 +8,7 @@ if [ "$zsh_path" == "/usr/bin/zsh" ]; then
 else
 echo "zsh no está instalado"
 # código para instalar zsh
-sudo apt install zsh
+sudo apt -y install zsh
 fi
  # Verificar si el archivo de configuración de Oh My Zsh existe
 if [ "$ZSH"=="~/.oh-my-zsh" ]; then
