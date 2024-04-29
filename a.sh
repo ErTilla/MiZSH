@@ -11,7 +11,7 @@ echo "zsh no está instalado"
 sudo apt install zsh
 fi
  # Verificar si el archivo de configuración de Oh My Zsh existe
-if [ -f "$ZSH" ]; then
+if [ "$ZSH"=="~/.oh-my-zsh" ]; then
 echo "Oh My Zsh está instalado en este sistema."
 cp ~/tmp/.zshrc ~/.zshrc
 else
