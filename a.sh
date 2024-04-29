@@ -38,5 +38,5 @@ fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 sudo rm -r ~/tmp
-sudo rm -r MiZSH
-chsh -s zsh
+sudo rm -r ~/MiZSH
+chsh -s $(which zsh)
