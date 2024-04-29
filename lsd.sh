@@ -8,3 +8,10 @@ if [ -x "$(command -v lsd)" ]; then
         sudo apt install lsd
 
     fi
+if [ -x "$(command -v lsd)" ]; then
+echo "lsd está instalado en tu sistema."
+    else
+        echo "lsd no está instalado en tu sistema."
+        sudo snap install lsd
+
+    fi
