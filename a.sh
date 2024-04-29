@@ -17,8 +17,8 @@ cp ~/tmp/.zshrc ~/.zshrc
 else
 echo "Oh My Zsh no está instalado en este sistema."
 cp ~/tmp/.zshrc ~/.zshrc
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/
-sh ~/ohmyzsh/tools/install.sh
+git clone https://github.com/ohmyzsh/ohmyzsh.git
+sh ./ohmyzsh/tools/install.sh
 
 fi
 # Ruta al archivo de configuración de Powerlevel10k
@@ -30,11 +30,12 @@ echo "Powerlevel10k está instalado en este sistema."
 sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
 else
 echo "Powerlevel10k no está instalado en este sistema."
-git clone https://github.com/romkatv/powerlevel10k.git ~/
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+git clone https://github.com/romkatv/powerlevel10k.git 
+echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 source ~/.zshrc
 sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
+
 chsh -s $(which zsh)
