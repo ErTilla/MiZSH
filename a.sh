@@ -21,6 +21,7 @@ echo "Oh My Zsh no está instalado en este sistema."
  git clone https://github.com/ohmyzsh/ohmyzsh.git
  sh ./ohmyzsh/tools/install.sh
 fi
+zsh
 # Ruta al archivo de configuración de Powerlevel10k
 p10k="$HOME/.p10k.zsh"
         
