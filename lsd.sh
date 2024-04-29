@@ -7,4 +7,3 @@
         sudo apt install lsd
 
     fi
-fi
