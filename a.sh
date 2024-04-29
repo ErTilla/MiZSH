@@ -35,5 +35,5 @@ echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 source ~/.zshrc
 sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 fi
-sh ~/tmp/batcat.sh
-sh ~/tmp/lsd.sh
+sh ~/MiZSH/batcat.sh
+sh ~/MiZSH/lsd.sh

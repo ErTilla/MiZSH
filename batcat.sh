@@ -1,9 +1,8 @@
-#!/bin/bash
-
-
-    
+#!/bin/bash 
 # Comprobar si batcat está instalado
-if which batcat &> /dev/null ; then
+
+
+if "which batcat" == "/bin/batcat" ; then
     echo "batcat está instalado en este sistema."
     batcat --version
 
