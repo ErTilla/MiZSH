@@ -37,3 +37,6 @@ sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
+sudo rm -r ~/tmp
+sudo rm -r MiZSH
+chsh -s zsh
