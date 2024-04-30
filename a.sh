@@ -14,7 +14,7 @@ fi
 if [ -z "$ZSH" ]; then
 echo "Oh My Zsh no está instalado en este sistema."
 git clone https://github.com/ohmyzsh/ohmyzsh.git
-sh ./ohmyzsh/tools/install.sh
+sh ./ohmyzsh/tools/install.sh --unattended
 cp ./tmp/.zshrc ~/.zshrc
 else
 echo "Oh My Zsh está instalado en este sistema."
@@ -39,3 +39,4 @@ sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 
 chsh -s $(which zsh)
+zsh
