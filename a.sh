@@ -33,7 +33,7 @@ git clone https://github.com/romkatv/powerlevel10k.git
 cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 #echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
-source ~/.zshrc
+#source ~/.zshrc
 fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
