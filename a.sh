@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mv tmp ~/
+
 zsh_path=$(which zsh)
 
 if [ "$zsh_path" == "/usr/bin/zsh" ]; then
@@ -13,12 +13,12 @@ fi
  # Verificar si el archivo de configuración de Oh My Zsh existe
 if [ "$ZSH"=="~/.oh-my-zsh" ]; then
 echo "Oh My Zsh está instalado en este sistema."
-cp ~/tmp/.zshrc ~/.zshrc
+cp ./tmp/.zshrc ~/.zshrc
 else
 echo "Oh My Zsh no está instalado en este sistema."
-cp ~/tmp/.zshrc ~/.zshrc
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 sh ./ohmyzsh/tools/install.sh
+cp ./tmp/.zshrc ~/.zshrc
 
 fi
 # Ruta al archivo de configuración de Powerlevel10k
@@ -31,9 +31,10 @@ sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
 else
 echo "Powerlevel10k no está instalado en este sistema."
 git clone https://github.com/romkatv/powerlevel10k.git 
-echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+cp  ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme ~/.oh-my-zsh/themes/
+#echo 'source ~/MiZSH/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
 source ~/.zshrc
-sudo cp -r ~/tmp/.p10k.zsh ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
