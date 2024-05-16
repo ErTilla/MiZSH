@@ -27,6 +27,7 @@ p10k="$HOME/.p10k.zsh"
 if [ -f "$p10k" ]; then
 echo "Powerlevel10k está instalado en este sistema."
 sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
+cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 else
 echo "Powerlevel10k no está instalado en este sistema."
 git clone https://github.com/romkatv/powerlevel10k.git 
