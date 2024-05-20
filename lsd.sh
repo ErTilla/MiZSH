@@ -5,7 +5,7 @@ if [ -x "$(command -v lsd)" ]; then
         echo "lsd está instalado en tu sistema."
     else
         echo "lsd no está instalado en tu sistema."
-        sudo apt install lsd
+        sudo apt -y install lsd
 
     fi
 if [ -x "$(command -v lsd)" ]; then
@@ -13,5 +13,5 @@ echo "lsd está instalado en tu sistema."
     else
         echo "lsd no está instalado en tu sistema."
         sudo snap install lsd
-
+        sudo cp -r /snap/bin/lsd /bin/
     fi
