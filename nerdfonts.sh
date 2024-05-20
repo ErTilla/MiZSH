@@ -8,8 +8,8 @@ if fc-list | grep -q "$FONT_NAME"; then
     echo "Nerd Font está instalada"
 else
     echo "Nerd Font no está instalada"
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip ~
-    unzip ~/Hack.zip
-    sudo mv ~/*.ttf /usr/share/fonts/
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip 
+    unzip Hack.zip
+    sudo mv ./*.ttf /usr/share/fonts/
     fc-cache -fv
 fi
