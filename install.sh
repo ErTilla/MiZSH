@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sh ~/MiZSH/searchsploit.sh
 zsh_path=$(which zsh)
 
 if [ "$zsh_path" == "/usr/bin/zsh" ]; then
