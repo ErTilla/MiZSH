@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+sh ~/MiZSH/searchsploit.sh
 zsh_path=$(which zsh)
 
 if [ "$zsh_path" == "/usr/bin/zsh" ]; then
@@ -35,7 +35,7 @@ cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
-sh ~/MiZSH/searchsploit.sh
+
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
 sh ~/MiZSH/nerdfonts.sh
