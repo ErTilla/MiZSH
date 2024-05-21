@@ -35,9 +35,10 @@ cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
+sh ~/MiZSH/searchsploit.sh
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
 sh ~/MiZSH/nerdfonts.sh
-sh ~/MiZSH/searchsploit.sh
+
 chsh -s $(which zsh)
 zsh
