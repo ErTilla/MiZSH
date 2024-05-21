@@ -9,4 +9,5 @@ else
         echo "searchsploit esta instalado"
     else
         sudo snap install --no-wait searchsploit
+    fi
 fi

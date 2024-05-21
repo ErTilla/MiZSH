@@ -38,6 +38,6 @@ sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
 sh ~/MiZSH/nerdfonts.sh
-
+sh ~/MiZSH/searchsploit.sh
 chsh -s $(which zsh)
 zsh
