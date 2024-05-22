@@ -11,5 +11,7 @@ else
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip 
     unzip Hack.zip
     sudo mv ./*.ttf /usr/share/fonts/
-    fc-cache -fv
+    sudo cp ~/MiZSH/console-setup /etc/default/console-setup
+    sudo setupcon
+
 fi
