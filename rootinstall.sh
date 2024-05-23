@@ -27,10 +27,10 @@ if [ -z "$ZSH" ]; then
 echo "Oh My Zsh no está instalado en este sistema."
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 sh ./ohmyzsh/tools/install.sh --unattended
-cp ./tmp/.zshrc ~/.zshrc
+cp ./tmp/.zshrcroot ~/.zshrc
 else
 echo "Oh My Zsh está instalado en este sistema."
-cp ./tmp/.zshrc ~/.zshrc
+cp ./tmp/.zshrcroot ~/.zshrc
 fi
 # Ruta al archivo de configuración de Powerlevel10k
 p10k="$HOME/.p10k.zsh"
@@ -38,21 +38,15 @@ p10k="$HOME/.p10k.zsh"
 # Verificar si el archivo de configuración de Powerlevel10k existe
 if [ -f "$p10k" ]; then
 echo "Powerlevel10k está instalado en este sistema."
-sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
+sudo cp -r ./tmp/p10kroot ~/.p10k.zsh
 cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 else
 echo "Powerlevel10k no está instalado en este sistema."
 git clone https://github.com/romkatv/powerlevel10k.git 
 cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
-sudo cp -r ./tmp/.p10k.zsh ~/.p10k.zsh
+sudo cp -r ./tmp/p10kroot ~/.p10k.zsh
 fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
 chsh -s $(which zsh)
-
-#ZSH para root
-sudo cd /root
-sudo git clone https://github.com/ErTilla/MiZSH
-sudo sh ./MiZSH/rootinstall.sh
-zsh
