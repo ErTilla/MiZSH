@@ -46,7 +46,6 @@ git clone https://github.com/romkatv/powerlevel10k.git
 cp -r ~/MiZSH/powerlevel10k ~/.oh-my-zsh/themes/
 sudo cp -r ./tmp/p10kroot ~/.p10k.zsh
 fi
-sh ~/MiZSH/batcat.sh
-sh ~/MiZSH/lsd.sh
-sh ~/MiZSH/ftp.sh
+
 chsh -s $(which zsh)
+zsh
