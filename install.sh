@@ -49,5 +49,9 @@ fi
 sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
+
+sudo chown root:root *
+sudo mv ../MiZSH /root/
+sudo /root/MiZSH/rootinstall.sh
 chsh -s $(which zsh)
 zsh
