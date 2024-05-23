@@ -54,5 +54,5 @@ chsh -s $(which zsh)
 #ZSH para root
 sudo cd /root
 sudo git clone https://github.com/ErTilla/MiZSH
-sudo sh ./MiZSH/rootinstall.sh
+sudo sh ./rootinstall.sh
 zsh
