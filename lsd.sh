@@ -10,7 +10,7 @@ else
         echo "lsd está instalado en tu sistema."
     else
         echo "lsd no está instalado en tu sistema."
-        sudo snap install --no-wait lsd
+        sudo snap install  lsd
         sudo cp -r /snap/bin/lsd /bin/
     fi
 
