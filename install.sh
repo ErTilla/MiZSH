@@ -52,6 +52,7 @@ sh ~/MiZSH/ftp.sh
 chsh -s $(which zsh)
 
 #ZSH para root
+sudo su
 if which searchsploit &>/dev/null; then
     echo "searchsploit está instalado"
 else
@@ -79,7 +80,7 @@ if [ -z "$ZSH" ]; then
 echo "Oh My Zsh no está instalado en este sistema."
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 sh ./ohmyzsh/tools/install.sh --unattended
-cp ./tmp/.zshrc ~/.zshrc
+cp ./tmp/.zshrcroot ~/.zshrc
 else
 echo "Oh My Zsh está instalado en este sistema."
 cp ./tmp/.zshrc ~/.zshrc
