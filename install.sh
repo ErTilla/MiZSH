@@ -50,9 +50,4 @@ sh ~/MiZSH/batcat.sh
 sh ~/MiZSH/lsd.sh
 sh ~/MiZSH/ftp.sh
 chsh -s $(which zsh)
-
-#ZSH para root
-sudo cd /root
-sudo git clone https://github.com/ErTilla/MiZSH
-sudo sh ./rootinstall.sh
 zsh
