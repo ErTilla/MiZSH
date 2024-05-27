@@ -13,7 +13,7 @@ else
     sudo mv ./*.ttf /usr/share/fonts/
     fc-cache -fv
     Archivo="/etc/default/console-setup"
-    if[ -e "$Archivo" ]; then
+    if -e "$Archivo" ; then
         echo "el archivo $Archivo existe"
     else
         echo "el archivo $Archivo no existe"
@@ -37,7 +37,7 @@ else
 
     # Aplicar los cambios
     setupcon
-
+    fi
     # Reiniciar el sistema (opcional)
     read -p "¿Deseas reiniciar el sistema para aplicar los cambios? (s/n): " answer
     if [[ $answer =~ ^[Ss]$ ]]; then
