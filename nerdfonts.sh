@@ -12,8 +12,15 @@ else
     unzip Hack.zip
     sudo mv ./*.ttf /usr/share/fonts/
     fc-cache -fv
+    Archivo="/etc/default/console-setup"
+    if -e "$Archivo" ; then
+        echo "el archivo $Archivo existe"
+    else
+        echo "el archivo $Archivo no existe"
+        sudo apt -y update
+        sudo apt -y install console-setup
     # Variables de configuración
-    FONTFACE="VGA"
+    FONTFACE="HackNerdFont-Bold"
     FONTSIZE="16x32"
     CONFIG_FILE="/etc/default/console-setup"
 
@@ -30,7 +37,7 @@ else
 
     # Aplicar los cambios
     setupcon
-
+    fi
     # Reiniciar el sistema (opcional)
     read -p "¿Deseas reiniciar el sistema para aplicar los cambios? (s/n): " answer
     if [[ $answer =~ ^[Ss]$ ]]; then
