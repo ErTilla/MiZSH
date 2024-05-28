@@ -1,20 +1,13 @@
 #!/bin/bash
-
-
-echo "Nerd Font no está instalada"
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip 
-    unzip Hack.zip
-    sudo mv ./*.ttf /usr/share/fonts/
-    fc-cache -fv
-
-
-# Define el UUID del perfil que deseas cambiar (reemplaza con tu UUID real)
-PROFILE_UUID="UUID1" # Reemplazar con el UUID real
-
-# Nueva fuente que deseas establecer
-NEW_FONT="Hack Nerd Font Mono 12"
-
-# Cambiar la fuente del perfil
-dconf write /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/font "'$NEW_FONT'"
-
-echo "Fuente cambiada a $NEW_FONT en el perfil $PROFILE_UUID
+$ cd
+$ git clone https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .
+$ git clone https://github.com/gpakosz/.tmux.git "/path/to/oh-my-tmux"
+$ mkdir -p "$XDG_CONFIG_HOME/tmux"
+$ ln -s "/path/to/oh-my-tmux/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+$ cp "/path/to/oh-my-tmux/.tmux.conf.local" "$XDG_CONFIG_HOME/tmux/tmux.conf.local"
+$ git clone https://github.com/gpakosz/.tmux.git "/path/to/oh-my-tmux"
+$ mkdir -p "~/.config/tmux"
+$ ln -s "/path/to/oh-my-tmux/.tmux.conf" "~/.config/tmux/tmux.conf"
+$ cp "/path/to/oh-my-tmux/.tmux.conf.local" "~/.config/tmux/tmux.conf.local"
