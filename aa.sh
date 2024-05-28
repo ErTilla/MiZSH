@@ -7,14 +7,14 @@ echo "Nerd Font no está instalada"
     sudo mv ./*.ttf /usr/share/fonts/
     fc-cache -fv
 
-# Nombre del perfil que deseas cambiar (por defecto suele ser 'default')
-PROFILE=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
+
+# Define el UUID del perfil que deseas cambiar (reemplaza con tu UUID real)
+PROFILE_UUID="UUID1" # Reemplazar con el UUID real
 
 # Nueva fuente que deseas establecer
 NEW_FONT="Hack Nerd Font Mono 12"
-sudo apt-get install gnome-terminal gsettings-desktop-schemas
 
 # Cambiar la fuente del perfil
-gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$PROFILE/" font "$NEW_FONT"
+dconf write /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/font "'$NEW_FONT'"
 
-echo "Fuente cambiada a $NEW_FONT en el perfil $PROFILE"
+echo "Fuente cambiada a $NEW_FONT en el perfil $PROFILE_UUID
